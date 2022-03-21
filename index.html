@@ -1,0 +1,186 @@
+<!DOCTYPE html> <!-- HTML5 -->
+
+<html>
+
+  <head> <!-- Cabecera: información acerca de la página -->
+
+    <!-- Caracteres especiales del español latino -->
+    <meta charset = "utf-8"> <!-- 'meta'data: describe el contenido de la página -->
+
+    <link rel = icon href = "icono.ico"> <!-- Ícono del sitio web -->
+
+    <title> LozanoSoft </title> <!-- Título de la página -->
+
+    <!-- Hojas de estilo - CSS: Cascading Style Sheets -->
+    <!-- <link rel = "stylesheet" href = "css/estilo.css"> -->
+    <!-- Fin -->
+
+  </head>
+
+  <body bgcolor = "#AABDEB" style = "background-image: url('img/fondo.jpg'); color: #FFFFFF; font-weight: 900;"> <!-- Cuerpo de la página -->
+
+    <!-- style = "background-image: url('img/fondo.jpg'); color: #FFFFFF; font-weight: 900;" -->
+
+    <!-- Listas -->
+
+    <!--
+      3 tipos:
+        * ordenadas
+        * no ordenadas
+        * definiciones
+    -->
+
+    <!-- Listas ordenadas -->
+
+    <h1> Lista ordenada </h1>
+
+    <ol> <!-- 'o'rdered 'l'ist -> lista ordenada -->
+
+      <!-- 'l'ist 'i'tem -> elemento de la lista -->
+      <li> Este es el primer elemento de la lista </li>
+      <li> Elemento 2 </li>
+      <li> Elemento 3 </li>
+      <li> Elemento 4 </li>
+      <li> Elemento 5 </li>
+
+    </ol>
+
+    <!-- Listas NO ordenadas -->
+
+    <h1> Lista NO ordenada </h1>
+
+    <ul> <!-- 'u'nordered 'l'ist -> lista desordenada -->
+
+      <li> Elemento 1 </li>
+      <li> Elemento 2 </li>
+      <li> Elemento 3 </li>
+      <li> Elemento 4 </li>
+      <li> Elemento 5 </li>
+
+    </ul>
+
+    <!-- Listas de definiciones -->
+
+    <h1> Lista de definiciones </h1>
+
+    <dl> <!-- 'd'efinition 'l'ist -> lista de definiciones -->
+
+      <!-- 'd'efinition 't'erm -> término de la definición -->
+      <dt> Término de la definición 1 </dt>
+      <!-- 'd'efinition 'd'escription  -> descripción de la definición -->
+      <dd> Descripción de la definición 1 </dd>
+
+      <dt> Término de la definición 2 </dt>
+      <dd> Descripción de la definición 2 </dd>
+      <dt> Término de la definición 3 </dt>
+      <dd> Descripción de la definición 3 </dd>
+      <dt> Término de la definición 4 </dt>
+      <dd> Descripción de la definición 4 </dd>
+      <dt> Término de la definición 5 </dt>
+      <dd> Descripción de la definición 5 </dd>
+
+    </dl>
+
+    <!-- Tablas -->
+
+    <!--
+
+      * Por defecto se crea de izquierda a derecha y de arriba hacia abajo.
+      * Se empieza desarrollando la primera fila (las columnas/celdas existentes en ella),
+      después la segunda fila y así sucesivamente.
+
+    -->
+
+    <h1> Tablas </h1>
+
+    <table border = 2> <!-- table -> tabla; border -> borde -->
+
+      <tr> <!-- 't'able 'r'ow cells -> fila de celdas/columnas de la tabla -->
+
+        <!--
+          't'able 'h'eader -> celda(s)/columna(s) que actúa(n) como cabecera(s) de la tabla.
+          colspan -> 'col'umn 'span' -> número de columnas que abarca la celda.
+          rowspan -> 'row' 'span' -> número de filas que abarca la celda.
+        -->
+
+        <th colspan = 2> Cabecera de la tabla </th>
+        <!-- Puede tener más de una cabecera: <th> Cabecera 2 </th> -->
+
+      </tr>
+
+      <tr> <!-- 't'able 'r'ow cells -> fila de celdas/columnas de la tabla -->
+
+        <td> Valor 1 de la cabecera 1 </td> <!-- 't'able cell 'd'efine -> define una celda de la tabla -->
+        <td> Valor 1 de la cabecera 2 </td>
+
+      </tr>
+
+      <tr> <!-- 't'able 'r'ow cells -> fila de celdas/columnas de la tabla -->
+
+        <td> Valor 2 de la cabecera 1 </td> <!-- 't'able cell 'd'efine -> define una celda de la tabla -->
+        <td> Valor 2 de la cabecera 2 </td>
+
+      </tr>
+
+    </table>
+
+    <!-- Enlaces -->
+
+    <h1> Enlaces </h1>
+
+    <!--
+      hypertext 'a'nchor -> ancla de hipertexto (a una página web u otro recurso)
+        * Conceptualmente el hipertexto es aquel que sirve para brindar material
+        de referencia a los lectores, a través del vínculo a dichas referencias.
+
+      target -> objetivo: ¿dónde se desea abrir el vínculo?
+             = "_blank" -> abre vínculo en OTRA página (en blanco); sin dicho
+      atributo lo hace dentro de esta misma.
+    -->
+
+    <a href = "https://www.facebook.com/lozanosoftoficial" target = "_blank"> ¡Visita mi página de Facebook! </a>
+
+    <br>
+    <br>
+
+    <!-- Implementación completa -->
+
+    <table border = 5>
+
+      <tr>
+        <th colspan = 2> Cabecera de la tabla </th> <!-- 't'able 'h'eader -->
+      </tr>
+
+      <tr>
+
+        <td> Valor 1 de la cabecera 1 </td>
+        <td> Valor 1 de la cabecera 2 </td>
+
+      </tr>
+
+      <tr>
+
+        <td>
+
+          <center>
+
+            <a href = "https://www.facebook.com/lozanosoftoficial" target = "_blank">
+
+              <img src = "img/miImagen.png" alt = "Descripción de la imagen" title = "Título de la imagen "
+              width = "450px" border = "5px" hspace = "10px" vspace = "10px"/>
+
+            </a>
+
+          </center>
+
+        </td>
+
+        <td> Valor 2 de la cabecera 2 </td>
+
+      </tr>
+
+    </table>
+
+  </body>
+
+</html>
